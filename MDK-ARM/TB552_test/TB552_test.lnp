@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"tb552_test\startup_stm32f103xe.o"
+"tb552_test\main.o"
+"tb552_test\stm32f1xx_it.o"
+"tb552_test\stm32f1xx_hal_msp.o"
+"tb552_test\stm32f1xx_hal_gpio_ex.o"
+"tb552_test\stm32f1xx_hal_tim.o"
+"tb552_test\stm32f1xx_hal_tim_ex.o"
+"tb552_test\stm32f1xx_hal_uart.o"
+"tb552_test\stm32f1xx_hal.o"
+"tb552_test\stm32f1xx_hal_rcc.o"
+"tb552_test\stm32f1xx_hal_rcc_ex.o"
+"tb552_test\stm32f1xx_hal_gpio.o"
+"tb552_test\stm32f1xx_hal_dma.o"
+"tb552_test\stm32f1xx_hal_cortex.o"
+"tb552_test\stm32f1xx_hal_pwr.o"
+"tb552_test\stm32f1xx_hal_flash.o"
+"tb552_test\stm32f1xx_hal_flash_ex.o"
+"tb552_test\system_stm32f1xx.o"
+"tb552_test\tb552_test.o"
+"tb552_test\usar_fputc.o"
+--library_type=microlib --strict --scatter "TB552_test\TB552_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TB552_test.map" -o TB552_test\TB552_test.axf
